@@ -11,7 +11,7 @@
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                document.getElementsByClassName("article")[0].innerHTML = this.responseText;
+                document.getElementsByClassName("article_container")[0].innerHTML = this.responseText;
             }
         };
         xhttp.open("POST", "https://jv1drclnm5.execute-api.us-east-2.amazonaws.com/beta/");
