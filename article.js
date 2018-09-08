@@ -1,12 +1,13 @@
 (function() {
 
     var save_article = document.getElementsByClassName('save_article')[0];
+    
     save_article.addEventListener('click', function(){
         var article = {};
-        article.name = document.getElementsByClassName('title')[0]
-        article.link = document.getElementsByClassName('link')[0]
-        article.date = document.getElementsByClassName('date')[0]
-        article.snippet = document.getElementsByClassName('snippet')[0]
+        article.name = document.getElementsByClassName('title')[0].innerText;
+        article.link = document.getElementsByClassName('link')[0].innerText;
+        article.date = document.getElementsByClassName('date')[0].innerText;
+        article.snippet = document.getElementsByClassName('snippet')[0].innerText;
         
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
